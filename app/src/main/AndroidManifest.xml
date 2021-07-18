@@ -18,18 +18,20 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:replace="android:allowBackup">
+    <meta-data android:name="pnd_debug_logging" android:value="true"/>
         <activity android:name="sdk.pendo.io.activities.PendoGateActivity" android:launchMode="singleInstance">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:scheme="pendo-1437719b"/>
+                <data android:scheme="pendo-04317a55"/>
             </intent-filter>
             <intent-filter>
-                <action android:name="1437719b" />
+                <action android:name="04317a55" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".SplashActivity"
             android:label="@string/app_name">

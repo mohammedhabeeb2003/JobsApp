@@ -69,8 +69,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Pendo.PendoInitParams pendoParams = new Pendo.PendoInitParams();
-        pendoParams.setVisitorId("Mohammed Habeeb");
-        pendoParams.setAccountId("Codelight Solutions");
+        pendoParams.setVisitorId("Habeeb_New");
+        pendoParams.setAccountId("View_Test");
 
 //send Visitor Level Data
         Map<String, Object> visitorData = new HashMap<>();
@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         accountData.put("Size", "Enterprise");
         pendoParams.setAccountData(accountData);
 
-        String pendoAppKey = "eyJhbGciOiJSUzI1NiIsImtpZCI6IiIsInR5cCI6IkpXVCJ9.eyJkYXRhY2VudGVyIjoidXMiLCJrZXkiOiI3NTA4Y2E1MzkyMmI2ZWM1MzYyOWMwZTkwMzJkYzkyN2MwYzU4ZjdiNzJlNjRkOWI0ODViN2YzYjA2ODZlYWEzNmMwNzU1MjVkMDExYzI5NTU4NmViNzE1N2NlYzZiYzVhZGNlMWExZWMyMWNmZDA2N2QwODVjOTA5OTViYzBjOTVhZjI2MDVmNmFkZDQ4Y2M5YzBkYWMzYWE3NDk1Nzk4Ljc0NzA0NzIxYTQyMWMzYWU0MDk5YjYxMDY5ODFhNzA5LmM2ZTcyYTUyYmEwNTg5ZDEwNDE0N2YwN2YyOGIxYTYxNWQ5NjVjODQ2OTAwMjBhNTA3ODljZjEzMzI2MjgwMjcifQ.bwXG4LtQpqEQm5VOxuD9zqBYsFgG_ylTIR948IhT5N-LGukKyjSN8Dv22AF1SuabEk2vBr4HIY_tnpFTNCKSlND9kt1z6HhN5-z6mlK2_V7ajpyejtSOjiLzTsAXibXJVX7ESJa8taxR3QDDv18SwoDzlGvKdfGZ1cyuxfreLTI";
+        String pendoAppKey = "eyJhbGciOiJSUzI1NiIsImtpZCI6IiIsInR5cCI6IkpXVCJ9.eyJkYXRhY2VudGVyIjoidXMiLCJrZXkiOiI1MmRlYjE1MjA2MTQ0NTM4NTZkMTIxMmVhMTIyNzgyODQyNWY1NTNiN2M5ZTY2ZWQ5Njg4Y2E4NzcwYzA0MTdkYWU2OGM4YzU2MmMzNTkxZmQwN2Y2YTIzNGUyMjM3MjAwZTM0MmM2NmEzZmYxY2I0NzgwZGM4ZTkwZmM4YjQ1YjZlNDU4ZDEzNTU0YjBjZTQ2ZDEyMzVkNjUxOWZhZWM1LmE3ZjJmZDA2Njk2NTUyNDZkMGRhNzM1YzFhMDQ3NmI3LmJhMTljMmM2NmU0YzM4NzBhMjkwZTkyMGRiMzg1NmY4Yzg4MzU5ODUzOTFjODE3NGZhNzJlYzhjYWRkOTBjOTAifQ.Cb5npxeO9b1U_NUZc-jIRq_i-4CRmKU1DflNRgtV3EeuOOc-IYV52R8IdAInAOEdfcIoWmKuHg4pIBmSAjyLVfiBCZovr9Ple321MgrITXwigCsrEOiead8JhKNQRI-CCI4D3Dld6yfoaprap7qtRdZKaWPFBImOFleaa37nSK4";
         Pendo.initSDK(
                 this,
                 pendoAppKey,

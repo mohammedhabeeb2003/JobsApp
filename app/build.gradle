@@ -12,8 +12,8 @@ android {
                                 onesignal_google_project_number: "REMOTE"]
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 1
-        versionName "1.0"
+        versionCode 4
+        versionName "4.0"
         multiDexEnabled true
     }
     buildTypes {
@@ -27,12 +27,26 @@ android {
         it.buildConfigField 'String', 'SERVER_URL', serverUrl
     }
 }
+repositories {
+    maven {
+        url "https://software.mobile.pendo.io/artifactory/android-sdk-externals"
+    }
+    maven {
+        url "https://software.mobile.pendo.io/artifactory/android-release"
+    }
+    maven {
+        url "https://software.mobile.pendo.io/artifactory/applause-android-sdk-shared"
+    }
+    mavenCentral()
+}
+
+
 
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation group:'sdk.pendo.io' , name:'pendoIO', version:'2.6.+', changing:true
+    implementation group:'sdk.pendo.io' , name:'pendoIO', version:'2.10.0.1998', changing:true
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation 'androidx.cardview:cardview:1.0.0'
